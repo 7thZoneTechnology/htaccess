@@ -1,0 +1,37 @@
+<html>
+<head>
+<style>
+#santa {
+   
+    background: url("download (2).png");
+   
+	 width: 85px;
+    height: 85px;
+   
+    animation:walk 1s steps(12) infinite,forward 5s linear infinite;
+	
+}
+@keyframes walk{
+    0%{
+	background-position: 0px;
+	}
+	100%{
+	background-position: 1024px;
+	}
+}
+
+/* Standard syntax */
+@keyframes forward {
+0%{
+   transform:translateX(-100px);
+   }
+   
+    100% {transform:translateX(1200px);}
+}
+</style>
+</head>
+<body>
+
+<div id="santa"></div>
+</body>
+</html>
